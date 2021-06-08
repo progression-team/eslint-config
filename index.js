@@ -22,7 +22,7 @@ module.exports = {
     'space-before-function-paren': ['error', 'always'],
     'semi': ['error', 'never'],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // allow debugger during development
-    'arrow-parens': ['error', 'as-needed'],
+    'arrow-parens': ['error', 'always'],
     'no-underscore-dangle': 'off',
     'no-return-assign': 'off',
     'no-console': 'off',
