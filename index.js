@@ -4,7 +4,8 @@ module.exports = {
     node: true
   },
   extends: [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:promise/recommended"
   ],
   plugins: [
     "import",
@@ -14,15 +15,15 @@ module.exports = {
     'import/extensions': ['error', {
       'js': 'never',
       'json': 'always',
+      'css': 'always',
+      'scss': 'always'
     }],
-    'comma-dangle': ['error', 'never'],
     'import/no-unresolved': 0,
     'space-before-function-paren': ['error', 'always'],
     'semi': ['error', 'never'],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // allow debugger during development
     'arrow-parens': ['error', 'as-needed'],
     'no-underscore-dangle': 'off',
-    'no-confusing-arrow': 'off',
     'no-return-assign': 'off',
     'no-console': 'off',
     'no-multi-assign': 'off',
@@ -30,15 +31,13 @@ module.exports = {
     'global-require': 'off',
     'object-curly-spacing': ['error', 'always'],
     'promise/avoid-new': 'off',
-    'promise/prefer-await-to-then': 'error',
-    'promise/prefer-await-to-callbacks': 'error',
+    'promise/prefer-await-to-then': 1,
+    'promise/prefer-await-to-callbacks': 1,
     'import/no-dynamic-require': 'off',
     'import/no-extraneous-dependencies': ['error', {
       'devDependencies': [
         'test/**/*',
-        'nuxt.config.js',
-        'rollup.config.js',
-        'webpack.config.js',
+        'config/**/*',
         '**/__mocks__/**/*',
         'build/**/*',
         '**/*.spec.*',
@@ -49,7 +48,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.vue', '.json', '.ts', '.tsx']
+        extensions: ['.js', '.json', '.ts', '.tsx']
       }
     },
   },
