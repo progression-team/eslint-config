@@ -1,5 +1,5 @@
 {
-  "name": "@samtgarson/eslint-config",
+  "name": "@progression/eslint-config",
   "version": "2.4.0",
   "description": "Eslint config",
   "main": "index.js",
