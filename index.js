@@ -14,9 +14,16 @@ module.exports = {
   rules: {
     'import/extensions': ['error', {
       'js': 'never',
+      'jsx': 'never',
+      'ts': 'never',
+      'tsx': 'never',
       'json': 'always',
       'css': 'always',
-      'scss': 'always'
+      'scss': 'always',
+      'svg': 'always',
+      'png': 'always',
+      'jpg': 'always',
+      'jpeg': 'always'
     }],
     'import/no-unresolved': 0,
     'space-before-function-paren': ['error', 'always'],
