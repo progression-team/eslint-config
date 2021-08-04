@@ -1,4 +1,4 @@
-**eslint-config** 
+**eslint-config**
 
 ## Usage
 
@@ -7,9 +7,9 @@ Extend your Eslint config
 // .eslintrc.js
 module.exports = {
   extends: [
-    "@samtgarson/eslint-config",
-    "@samtgarson/eslint-config/typescript",
-    "@samtgarson/eslint-config/react"
+    "@progression/eslint-config",
+    "@progression/eslint-config/typescript",
+    "@progression/eslint-config/react"
   ]
 }
 ```
