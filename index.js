@@ -26,7 +26,6 @@ module.exports = {
       'jpeg': 'always'
     }],
     'import/no-unresolved': 0,
-    'space-before-function-paren': ['error', 'always'],
     'semi': ['error', 'never'],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // allow debugger during development
     'arrow-parens': ['error', 'always'],
@@ -50,7 +49,7 @@ module.exports = {
         '**/*.spec.*',
         '**/*.test.*'
       ]
-    }]
+    }],
   },
   settings: {
     'import/resolver': {
