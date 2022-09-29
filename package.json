@@ -1,5 +1,5 @@
 {
-  "name": "@progression/eslint-config",
+  "name": "@progression-team/eslint-config",
   "version": "3.0.0",
   "description": "Eslint config",
   "main": "index.js",
