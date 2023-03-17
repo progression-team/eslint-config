@@ -43,11 +43,14 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       'devDependencies': [
         'test/**/*',
+        'spec/**/*',
         'config/**/*',
         '**/__mocks__/**/*',
         'build/**/*',
         '**/*.spec.*',
-        '**/*.test.*'
+        '**/*.test.*',
+        'playwright.config.ts',
+        'vite.config.ts',
       ]
     }],
   },
